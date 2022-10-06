@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import statusCodes from '../helpers/statusCodes';
-import ProductService from '../services/Products.service';
+import ProductService from '../services/Product.service';
 
 class ProductController {
   service: ProductService;
