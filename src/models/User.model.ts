@@ -16,4 +16,12 @@ export default class UserModel {
     await this.connection.execute<ResultSetHeader>(query, [username, classe, level, password]);
     return tokenGenerator(username, classe, level);
   }
+
+  public async userLogin(user: { username: string, password: string }): Promise<User[]> {
+    const { username, password } = user;
+    const query = 'SELECT * FROM Trybesmith.Users WHERE username = ? AND password = ?';
+    const findUser = await this.connection.execute(query, [username, password]);
+    const [rows] = findUser;
+    return rows as User[];
+  }
 }
