@@ -12,5 +12,10 @@ export default class OrderController {
   public getAll = async (_req: Request, res: Response) => {
     const result = await this.service.getAll();
     return res.status(statusCodes.OK).json(result);
-  }; 
+  };
+ 
+  public insertProduct = async (req: Request, res: Response) => {
+    const result = await this.service.insertOrder(req.body, req.user);
+    return res.status(statusCodes.CREATED).json(result);
+  };
 }

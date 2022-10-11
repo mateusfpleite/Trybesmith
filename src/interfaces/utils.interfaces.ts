@@ -1,0 +1,1 @@
+export type JWTData = { username: string, classe: string, level: number };
