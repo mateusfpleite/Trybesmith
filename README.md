@@ -1,7 +1,7 @@
 # Trybesmith
 
 <p>
-Project developed for Trybe's backend module, mainly using NodeJS with Express, TypeScript, MySQL, Docker and JWT. The API simulates a shop of craft RPG items that are sold on demand. The API has endpoints to register and retrieve products, orders and users.
+Project developed for Trybe's backend module, mainly using NodeJS with Express, TypeScript, MySQL, Docker and JWT. The project also implements Object-Oriented Programming concepts and was almost entirely developed using classes. The API simulates a shop of craft RPG items that are sold on demand. The API has endpoints to register and retrieve products, orders and users.
 </p> 
 
 <p> Use 'npm install' to install project dependencies </p> 
